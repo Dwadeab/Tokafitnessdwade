@@ -398,3 +398,51 @@ footer {
 .login-text a:hover {
   text-decoration: underline;
 }
+
+/* ---------- Terms & Conditions ---------- */
+
+.terms-section {
+  padding: 120px 2rem 6rem;
+}
+
+.terms-section h1 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.updated {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+}
+
+.terms-card {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.terms-card h2 {
+  margin-top: 2rem;
+  color: var(--hover-accent);
+}
+
+.terms-card p {
+  margin-top: 0.6rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
