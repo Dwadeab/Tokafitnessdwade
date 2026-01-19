@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style2.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | ToKa Fitness</title>
-
-  <link rel="stylesheet" href="style2.css">
+  <title>Toka Fitness | Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-container{
+      max-width:400px;
+      margin:120px auto;
+      background:#8C92AC;
+      padding:30px;
+      border-radius:30px;
+      color:white;
+    }
+    .form-container h2{text-align:center;}
+    .form-container input{
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      border-radius:20px;
+      border:none;
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h1 class="logo">ToKa Fitness</h1>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="#">About us</a></li>
-      <li><a href="#">Classes</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Join Now!</a></li>
-    </ul>
-  </nav>
+<div id="main_menu">
+  <img id="pic2" src="Tokalogo.png" alt="Logo image">
+  <div class="navbar">
+    <a href="Index.html">Home</a>
+    <a href="Index.html#about">About</a>
+    <a href="Memberships.html">Memberships</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
 
-  <!-- Login Section -->
-  <section class="login-section">
-    <div class="login-card">
-      <h2>Member Login</h2>
-
-      <form>
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email" required>
-
-        <label>Password</label>
-        <input type="password" placeholder="Enter your password" required>
-
-        <button type="submit" class="btn">Login</button>
-
-        <p class="login-text">
-          Dont have an account? <a href="#">Join Now</a>
-        </p>
-      </form>
-    </div>
-  </section>
+<div class="form-container">
+  <h2>Log In</h2>
+  <form action="loginhandler.php" method="post">
+    <input type="text" name="username" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button class="button" type="submit">Log In</button>
+  </form>
+  <p style="text-align:center;">
+    Not a member yet? <a href="register.html" style="color:white;">Create an account</a>
+  </p>
+</div>
 
 </body>
 </html>
 
-<nav class="navbar">
-  <h1 class="logo">ToKa Fitness</h1>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="classes.html">Classes</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="login.html">Login</a></li>
-    <li><a href="#" class="btn">Join Now</a></li>
-  </ul>
-</nav>
